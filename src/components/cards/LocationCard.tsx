@@ -189,15 +189,15 @@ export function LocationCard(props: LocationCardProps): JSX.Element {
       </div>
 
 
-      {renderHours(location.hours)}
+      {/* {renderHours(location.hours)} */}
 
 <div className="flex flex-row  items-center lp-param-results lp-subparam-phoneNumber map-add">
 <div className="mr-2 mt-1"><img className=" " src="https://static.vecteezy.com/system/resources/thumbnails/003/720/476/small/phone-icon-telephone-icon-symbol-for-app-and-messenger-vector.jpg" width="28" height="28" alt="" />
 </div>
 <div className="phone "><a id="address" className="" href={`tel:${location.mainPhone}`}>{location.mainPhone}</a>
 </div></div>
-      <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">Check Availability</a>
-      <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">View Packages</a>
+      {/* <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">Check Availability</a>
+      <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">View Packages</a> */}
       <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">More Info</a>
       {screenSize !== 'sm' && (
         <div className={cssClasses.ctaButton}>

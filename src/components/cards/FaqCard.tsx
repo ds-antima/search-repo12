@@ -65,7 +65,7 @@ const builtInCssClasses: TrainerCardCssClasses = {
   container: 'flex flex-col p-4 shadow-sm my-2 align-items-center',
   descriptionContainer: 'w-full text-sm font-heading ',
   name: 'text-xl font-medium font-body font-bold',
-  ctaButton: 'flex border rounded-md mt-4 px-4 bg-black justify-center hover:bg-orange-900',
+  ctaButton: 'flex border rounded-md mt-4 px-4 bg-black justify-center hover:bg-black-900',
   ctaButtonText: 'font-heading text-black font-bold text-base px-3 py-3 sm:py-0',
 };
 
@@ -100,7 +100,8 @@ export function FaqCard(props: TrainerCardProps): JSX.Element {
     <AccordionItem  key={trainer.id}>
         <AccordionItemHeading>
             <AccordionItemButton>
-            <div className='text-red-600'>{renderName(trainer.name)}</div>
+            <div className="bg100 p-2"
+              style={{ color: "black" }}>{renderName(trainer.name)}</div>
             </AccordionItemButton>
         </AccordionItemHeading>
         <AccordionItemPanel>
